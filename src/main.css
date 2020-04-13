@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #fafafa;
+  background: #e2e2e2;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
   margin: 0;
@@ -42,6 +42,8 @@ body {
 .email-content {
   padding: 10px;
   text-align: center;
+  position: fixed;
+  right: 0;
 }
 
 .email-content p {
@@ -63,7 +65,7 @@ body {
 }
 
 .form-email {
-  width: calc(100% - 700px);
+  width: 45%;
   padding: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -73,7 +75,7 @@ body {
 .form-email span {
   font-family: Roboto;
   display: inline-block;
-  margin: 15px 0 10px 0;
+  margin: 10px 0 5px 0;
 }
 
 .form-email a#previewChanges {
@@ -108,4 +110,21 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   right: 20px;
   cursor: pointer;
+}
+
+.white-background {
+  background: #ffffff;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.individual-section {
+  width: calc(50% - 30px);
+  margin: 0 15px;
 }
