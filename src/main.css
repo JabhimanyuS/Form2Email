@@ -2,6 +2,12 @@
   font-family: 'Roboto';
 }
 
+@media screen and (max-width: 900px) {
+  body {
+    display: none;
+  }
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
