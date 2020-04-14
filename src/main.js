@@ -27,18 +27,21 @@
 					$(this).remove();
 				}
 			});
+			$emailCode.find('*').each(function(index) {
+				if($(this).attr('contenteditable') !== undefined) {
+					$(this).attr('contenteditable', false)
+				}
+			})
 			return $emailCode;
 		}
 
 		$('#previewChanges').on('click', function () {
-			htmlGenerate();
 			var a = htmlGenerate();
 			var newWindow = window.open();
 			newWindow.document.write($(a).html());
 		});
 
 		$('#downloadEmail').on('click', function () {
-			htmlGenerate();
 			var a = htmlGenerate();
 			var blob = new Blob([$(a).html().toString()], {
 				'type': 'text/html'
